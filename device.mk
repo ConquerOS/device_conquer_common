@@ -69,7 +69,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
-	
+
+# Move Wi-Fi modules to vendor
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 # Call QCOM Utils
 include device/conquer/common/qcom_utils.mk
 
