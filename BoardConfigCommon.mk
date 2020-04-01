@@ -18,3 +18,11 @@
 ifeq ($(call is-board-platform-in-list, apq8084 msm8226 msm8610 msm8974 msm8992 msm8994 msm8909 msm8916 msm8952 msm8976),true)
   TARGET_USES_QCOM_BSP := true
 endif
+
+# AV
+BOARD_USES_ADRENO := true
+TARGET_USES_AOSP_FOR_AUDIO ?= false
+TARGET_USES_QCOM_MM_AUDIO := true
+
+# Kernel
+TARGET_COMPILE_WITH_MSM_KERNEL := true
