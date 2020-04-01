@@ -64,7 +64,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.storage_manager.enabled=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+	persist.sys.fflag.override.settings_network_and_internet_v2=true
 	
 # Call QCOM Utils
 include device/conquer/common/qcom_utils.mk
