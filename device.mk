@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit Common BoardConfig
+$(call inherit-product device/conquer/common/BoardConfigCommon.mk)
+
 ifeq ($(TARGET_BUILD_VARIANT),user)
 # Enable ADB authentication
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.adb.secure=1
