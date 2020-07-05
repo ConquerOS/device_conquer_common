@@ -66,6 +66,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
 	persist.sys.fflag.override.settings_network_and_internet_v2=true
+
+# Optimize everything for preopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 	
 # Call QCOM Utils
 include device/conquer/common/qcom_utils.mk
