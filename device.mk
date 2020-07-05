@@ -69,3 +69,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 	
 # Call QCOM Utils
 include device/conquer/common/qcom_utils.mk
+
+# Include Common Qualcomm Device Tree on Qualcomm Boards
+$(call inherit-product-if-exists, device/qcom/common/common.mk)
