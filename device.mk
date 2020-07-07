@@ -68,7 +68,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 	persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # Optimize everything for preopt
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+# PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
 # Move Wi-Fi modules to vendor
 PRODUCT_VENDOR_MOVE_ENABLED := true
