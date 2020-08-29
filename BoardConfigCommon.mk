@@ -31,3 +31,6 @@ endif
 
 # Kernel
 TARGET_COMPILE_WITH_MSM_KERNEL := true
+
+# SELinux
+SELINUX_IGNORE_NEVERALLOWS := true
